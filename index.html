@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores - Flower Identifier</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Payment Screen -->
+    <div id="paymentScreen" class="payment-screen">
+        <div class="payment-card">
+            <div class="flower-icon">🌸</div>
+            <h1>Flores</h1>
+            <p class="tagline">Discover the World of Flowers</p>
+            <div class="features-list">
+                <div class="feature">
+                    <span class="feature-icon">🔍</span>
+                    <span>Search any flower by name</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📸</span>
+                    <span>Identify flowers from your photos</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🌺</span>
+                    <span>Learn about 100+ flower species</span>
+                </div>
+            </div>
+            <div class="price-tag">
+                <span class="price">$1</span>
+                <span class="price-label">one-time purchase</span>
+            </div>
+            <button id="purchaseBtn" class="purchase-btn">
+                <span>Unlock Flores</span>
+            </button>
+            <p class="guarantee">🔒 Secure payment • Instant access</p>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="mainApp" class="main-app hidden">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">🌸</span>
+                <h1>Flores</h1>
+            </div>
+            <p class="subtitle">Your Flower Encyclopedia</p>
+        </header>
+
+        <main>
+            <!-- Tab Navigation -->
+            <div class="tabs">
+                <button class="tab active" data-tab="search">
+                    <span class="tab-icon">🔍</span>
+                    <span>Search</span>
+                </button>
+                <button class="tab" data-tab="identify">
+                    <span class="tab-icon">📸</span>
+                    <span>Identify</span>
+                </button>
+            </div>
+
+            <!-- Search Tab -->
+            <div id="searchTab" class="tab-content active">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Type a flower name (e.g., Rose, Tulip, Sunflower)..." autocomplete="off">
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+                <div id="suggestions" class="suggestions hidden"></div>
+                <div id="searchResults" class="results"></div>
+            </div>
+
+            <!-- Identify Tab -->
+            <div id="identifyTab" class="tab-content">
+                <div class="upload-container">
+                    <div id="dropZone" class="drop-zone">
+                        <div class="drop-content">
+                            <span class="upload-icon">📷</span>
+                            <p>Drop your flower photo here</p>
+                            <p class="or">or</p>
+                            <label for="fileInput" class="upload-btn">Choose Photo</label>
+                            <input type="file" id="fileInput" accept="image/*" hidden>
+                        </div>
+                    </div>
+                    <div id="previewContainer" class="preview-container hidden">
+                        <img id="previewImage" src="" alt="Preview">
+                        <button id="identifyBtn" class="identify-btn">Identify This Flower</button>
+                        <button id="clearBtn" class="clear-btn">Choose Different Photo</button>
+                    </div>
+                </div>
+                <div id="identifyResults" class="results"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with 💐 by Bella</p>
+        </footer>
+    </div>
+
+    <script src="flowers-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
