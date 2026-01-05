@@ -12,6 +12,13 @@
     <input type="text" id="searchBox" placeholder="What flower do you want to find?">
     <button onclick="searchFlower()">Search!</button>
 
+    <br><br>
+
+    <button onclick="document.getElementById('photoInput').click()" class="photo-btn">📷 My Photos</button>
+    <input type="file" id="photoInput" accept="image/*" onchange="checkMyPhoto()" hidden>
+
+    <div id="photoArea"></div>
+
     <div id="results"></div>
 
     <script src="flowers.js"></script>

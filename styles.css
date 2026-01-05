@@ -74,3 +74,46 @@ button:hover {
 .not-found p {
     font-size: 20px;
 }
+
+.photo-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-btn:hover {
+    background-color: deeppink;
+}
+
+#photoArea {
+    margin-top: 20px;
+}
+
+#photoArea img {
+    max-width: 300px;
+    border-radius: 15px;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.flower-buttons {
+    margin-top: 15px;
+}
+
+.flower-pick-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.flower-pick-btn:hover {
+    background-color: lightgreen;
+}
