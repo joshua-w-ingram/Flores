@@ -3,8 +3,74 @@ body {
     text-align: center;
     font-family: Arial;
     padding: 20px;
+    min-height: 100vh;
 }
 
 h1 {
     color: green;
+    font-size: 40px;
+}
+
+input {
+    padding: 15px;
+    font-size: 18px;
+    border: 3px solid green;
+    border-radius: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#results {
+    margin-top: 30px;
+}
+
+.flower-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.flower-card h2 {
+    color: green;
+    font-size: 30px;
+}
+
+.flower-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.flower-card p {
+    font-size: 16px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.not-found {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.not-found p {
+    font-size: 20px;
 }
