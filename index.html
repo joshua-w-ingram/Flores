@@ -7,9 +7,11 @@
 <body>
 
     <div id="petals"></div>
+    <div id="confetti"></div>
 
     <h1>🌸 Flores - Flower Finder 🌸</h1>
     <p>By Bella</p>
+    <div id="flowerCounter" class="flower-counter"></div>
 
     <div class="qr-box">
         <p>📱 Scan to share this app!</p>
@@ -23,6 +25,11 @@
 
     <br><br>
 
+    <input type="text" id="colorSearch" placeholder="Search by color (pink, yellow, etc.)">
+    <button onclick="searchByColor()" class="color-btn">🎨 Find by Color!</button>
+
+    <br><br>
+
     <button onclick="document.getElementById('photoInput').click()" class="photo-btn">📷 My Photos</button>
     <input type="file" id="photoInput" accept="image/*" onchange="checkMyPhoto()" hidden>
 
@@ -30,9 +37,19 @@
 
     <button onclick="startQuiz()" class="quiz-btn">🧠 Flower Quiz!</button>
 
+    <button onclick="startMatchingGame()" class="match-btn">🃏 Matching Game!</button>
+
+    <button onclick="showAllFlowers()" class="browse-btn">🌺 Browse All!</button>
+
+    <button onclick="showFavorites()" class="fav-btn">❤️ My Favorites</button>
+
+    <button onclick="showCollection()" class="collect-btn">📋 My Collection</button>
+
     <div id="photoArea"></div>
 
     <div id="quizArea"></div>
+
+    <div id="gameArea"></div>
 
     <div id="results"></div>
 

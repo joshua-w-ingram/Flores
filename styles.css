@@ -272,3 +272,225 @@ button:hover {
     font-weight: bold;
     margin: 10px 0;
 }
+
+/* FLOWER COUNTER */
+.flower-counter {
+    background: linear-gradient(45deg, #4caf50, #8bc34a);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+/* COLOR SEARCH BUTTON */
+.color-btn {
+    background: linear-gradient(45deg, #e91e63, #9c27b0, #2196f3, #4caf50, #ffeb3b);
+    background-size: 300% 300%;
+    animation: rainbow 3s ease infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* MATCHING GAME BUTTON */
+.match-btn {
+    background: linear-gradient(45deg, #00bcd4, #03a9f4);
+}
+
+.match-btn:hover {
+    background: linear-gradient(45deg, #0097a7, #0288d1);
+}
+
+/* BROWSE ALL BUTTON */
+.browse-btn {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+}
+
+.browse-btn:hover {
+    background: linear-gradient(45deg, #e64a19, #f57c00);
+}
+
+/* FAVORITES BUTTON */
+.fav-btn {
+    background: linear-gradient(45deg, #e91e63, #f44336);
+}
+
+.fav-btn:hover {
+    background: linear-gradient(45deg, #c2185b, #d32f2f);
+}
+
+/* COLLECTION BUTTON */
+.collect-btn {
+    background: linear-gradient(45deg, #607d8b, #78909c);
+}
+
+.collect-btn:hover {
+    background: linear-gradient(45deg, #455a64, #546e7a);
+}
+
+/* CONFETTI */
+.confetti-piece {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -20px;
+    animation: confetti-fall 3s ease-out forwards;
+    pointer-events: none;
+    z-index: 2000;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* SPINNING FLOWER */
+.flower-card img.spin {
+    animation: spin-flower 1s ease-in-out;
+}
+
+@keyframes spin-flower {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* BROWSE ALL GRID */
+.flower-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flower-mini-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flower-mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.flower-mini-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flower-mini-card h4 {
+    margin: 10px 0 5px 0;
+    color: green;
+}
+
+.flower-mini-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* MATCHING GAME */
+.matching-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.match-card {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #9c27b0, #e91e63);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.match-card:hover {
+    transform: scale(1.05);
+}
+
+.match-card.flipped {
+    background: white;
+}
+
+.match-card.flipped img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.match-card.matched {
+    background: #c8e6c9;
+    border: 3px solid green;
+}
+
+/* FAVORITES */
+.fav-star {
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+
+.fav-star:hover {
+    transform: scale(1.3);
+}
+
+/* COLLECTION CHECKLIST */
+.collection-item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.collection-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.collection-item.collected {
+    background: #e8f5e9;
+    border: 2px solid green;
+}
+
+.collection-checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
