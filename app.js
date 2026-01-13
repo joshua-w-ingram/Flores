@@ -4,9 +4,222 @@
 // Start everything when page loads
 window.onload = function() {
     startFallingPetals();
+    startTwinklingStars();
     showFlowerOfDay();
     showFlowerCounter();
+    showMiniAchievements();
 };
+
+// TWINKLING STARS
+function startTwinklingStars() {
+    var starsDiv = document.getElementById('stars');
+    var starEmojis = ['⭐', '✨', '💫', '🌟'];
+
+    for (var i = 0; i < 15; i++) {
+        var star = document.createElement('div');
+        star.className = 'star';
+        star.textContent = starEmojis[Math.floor(Math.random() * starEmojis.length)];
+        star.style.left = Math.random() * 100 + 'vw';
+        star.style.top = Math.random() * 100 + 'vh';
+        star.style.animationDelay = Math.random() * 2 + 's';
+        starsDiv.appendChild(star);
+    }
+}
+
+// SECRET FLOWER - Click title 5 times!
+var secretClicks = 0;
+function secretFlowerClicks() {
+    secretClicks++;
+    if (secretClicks >= 5) {
+        secretClicks = 0;
+        showSecretFlower();
+    }
+}
+
+function showSecretFlower() {
+    launchConfetti();
+    launchConfetti();
+    var results = document.getElementById('results');
+    results.innerHTML =
+        "<div class='flower-card secret-flower'>" +
+        "<h2>🌈✨ SECRET FLOWER FOUND! ✨🌈</h2>" +
+        "<h3>The Magical Rainbow Rose!</h3>" +
+        "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tinted_rose.jpg/800px-Tinted_rose.jpg' alt='Rainbow Rose'>" +
+        "<p><b>Colors:</b> ALL THE COLORS OF THE RAINBOW!</p>" +
+        "<p><b>Fun Fact:</b> You found Bella's secret flower! This magical rainbow rose doesn't exist in nature - artists make them by splitting the stem and putting each part in different colored water! You're a TRUE Flores explorer! 🌈</p>" +
+        "</div>";
+    results.scrollIntoView({ behavior: 'smooth' });
+    earnAchievement('secret');
+}
+
+// ACHIEVEMENTS SYSTEM
+var achievements = {
+    first_search: { name: "First Bloom", emoji: "🌱", desc: "Search for your first flower" },
+    quiz_master: { name: "Quiz Master", emoji: "🧠", desc: "Get a perfect score in quiz" },
+    collector: { name: "Collector", emoji: "📋", desc: "Find 10 flowers in real life" },
+    favorite: { name: "Flower Lover", emoji: "❤️", desc: "Add 5 flowers to favorites" },
+    speed_demon: { name: "Speed Demon", emoji: "⚡", desc: "Finish speed quiz under 15 seconds" },
+    match_winner: { name: "Match Winner", emoji: "🃏", desc: "Win the matching game" },
+    secret: { name: "Secret Finder", emoji: "🌈", desc: "Find the secret flower" },
+    explorer: { name: "Explorer", emoji: "🔍", desc: "Browse all flowers" },
+    color_master: { name: "Color Master", emoji: "🎨", desc: "Search by 3 different colors" }
+};
+
+function earnAchievement(id) {
+    var earned = JSON.parse(localStorage.getItem('floresAchievements') || '[]');
+    if (!earned.includes(id)) {
+        earned.push(id);
+        localStorage.setItem('floresAchievements', JSON.stringify(earned));
+        showAchievementPopup(id);
+        showMiniAchievements();
+    }
+}
+
+function showAchievementPopup(id) {
+    var ach = achievements[id];
+    alert("🏆 ACHIEVEMENT UNLOCKED!\n\n" + ach.emoji + " " + ach.name + "\n" + ach.desc);
+    launchConfetti();
+}
+
+function showMiniAchievements() {
+    var earned = JSON.parse(localStorage.getItem('floresAchievements') || '[]');
+    var bar = document.getElementById('achievements');
+    var html = "";
+
+    for (var id in achievements) {
+        var isEarned = earned.includes(id);
+        html += "<span class='mini-badge " + (isEarned ? "earned" : "") + "' title='" + achievements[id].name + "'>" + achievements[id].emoji + "</span>";
+    }
+
+    bar.innerHTML = html;
+}
+
+function showAchievements() {
+    var earned = JSON.parse(localStorage.getItem('floresAchievements') || '[]');
+    var results = document.getElementById('results');
+
+    var html = "<h3>🏆 My Badges & Achievements 🏆</h3>";
+    html += "<p>Earned: " + earned.length + " / " + Object.keys(achievements).length + "</p>";
+
+    for (var id in achievements) {
+        var ach = achievements[id];
+        var isEarned = earned.includes(id);
+        html += "<div class='badge-card " + (isEarned ? "" : "locked") + "'>" +
+            "<span class='badge-icon'>" + ach.emoji + "</span>" +
+            "<div class='badge-info'>" +
+            "<h4>" + ach.name + (isEarned ? " ✅" : " 🔒") + "</h4>" +
+            "<p>" + ach.desc + "</p>" +
+            "</div></div>";
+    }
+
+    results.innerHTML = html;
+    results.scrollIntoView({ behavior: 'smooth' });
+}
+
+// SPEED QUIZ
+var speedQuizScore = 0;
+var speedQuizQuestion = 0;
+var speedStartTime = 0;
+var speedTimer = null;
+
+function startSpeedQuiz() {
+    speedQuizScore = 0;
+    speedQuizQuestion = 0;
+    speedStartTime = Date.now();
+
+    var shuffled = flowers.slice().sort(function() { return 0.5 - Math.random(); });
+    quizFlowers = shuffled.slice(0, 5);
+
+    showSpeedQuizQuestion();
+}
+
+function showSpeedQuizQuestion() {
+    if (speedQuizQuestion >= quizFlowers.length) {
+        endSpeedQuiz();
+        return;
+    }
+
+    var elapsed = ((Date.now() - speedStartTime) / 1000).toFixed(1);
+    var correctFlower = quizFlowers[speedQuizQuestion];
+
+    var wrongAnswers = flowers.filter(function(f) {
+        return f.name !== correctFlower.name;
+    }).sort(function() { return 0.5 - Math.random(); }).slice(0, 3);
+
+    var options = wrongAnswers.concat([correctFlower]).sort(function() { return 0.5 - Math.random(); });
+
+    var quizArea = document.getElementById('quizArea');
+    quizArea.innerHTML =
+        "<div class='quiz-box'>" +
+        "<div class='timer'>⏱️ " + elapsed + "s</div>" +
+        "<h3>Question " + (speedQuizQuestion + 1) + " of 5 - GO FAST!</h3>" +
+        "<img src='" + correctFlower.picture + "' alt='Mystery flower' style='width:150px;height:150px;object-fit:cover;border-radius:10px;'>" +
+        "<div id='speedOptions'></div>" +
+        "</div>";
+
+    var optionsDiv = document.getElementById('speedOptions');
+    for (var i = 0; i < options.length; i++) {
+        var btn = document.createElement('button');
+        btn.className = 'quiz-option';
+        btn.textContent = options[i].name;
+        btn.onclick = (function(selectedName, correctName) {
+            return function() {
+                checkSpeedAnswer(selectedName, correctName, this);
+            };
+        })(options[i].name, correctFlower.name);
+        optionsDiv.appendChild(btn);
+    }
+
+    quizArea.scrollIntoView({ behavior: 'smooth' });
+
+    // Update timer every 100ms
+    clearInterval(speedTimer);
+    speedTimer = setInterval(function() {
+        var elapsed = ((Date.now() - speedStartTime) / 1000).toFixed(1);
+        var timerEl = document.querySelector('.timer');
+        if (timerEl) timerEl.textContent = "⏱️ " + elapsed + "s";
+    }, 100);
+}
+
+function checkSpeedAnswer(selected, correct, button) {
+    clearInterval(speedTimer);
+
+    if (selected === correct) {
+        speedQuizScore++;
+        launchConfetti();
+    }
+
+    speedQuizQuestion++;
+    setTimeout(showSpeedQuizQuestion, 300);
+}
+
+function endSpeedQuiz() {
+    clearInterval(speedTimer);
+    var totalTime = ((Date.now() - speedStartTime) / 1000).toFixed(1);
+
+    var quizArea = document.getElementById('quizArea');
+    var message = "";
+
+    if (speedQuizScore === 5 && totalTime < 15) {
+        message = "⚡ LIGHTNING FAST! You're a SPEED DEMON! ⚡";
+        earnAchievement('speed_demon');
+    } else if (speedQuizScore === 5) {
+        message = "🎉 Perfect score! Try to go faster next time!";
+    } else if (speedQuizScore >= 3) {
+        message = "👍 Good job! Keep practicing!";
+    } else {
+        message = "🌱 Keep learning and try again!";
+    }
+
+    quizArea.innerHTML =
+        "<div class='quiz-box'>" +
+        "<h3>⚡ Speed Quiz Complete! ⚡</h3>" +
+        "<div class='score-box'>Score: " + speedQuizScore + " / 5</div>" +
+        "<div class='timer'>Time: " + totalTime + " seconds</div>" +
+        "<p>" + message + "</p>" +
+        "<button onclick='startSpeedQuiz()' class='speed-btn'>Try Again!</button>" +
+        "</div>";
+}
 
 // FLOWER COUNTER
 function showFlowerCounter() {
@@ -142,6 +355,7 @@ function showAllFlowers() {
     html += "</div>";
     results.innerHTML = html;
     results.scrollIntoView({ behavior: 'smooth' });
+    earnAchievement('explorer');
 }
 
 // CREATE FLOWER CARD WITH FAVORITE BUTTON
@@ -320,6 +534,7 @@ function flipCard(cardElement) {
             if (matchedPairs === 8) {
                 setTimeout(function() {
                     alert('🎉 You found all the pairs! You WIN! 🎉');
+                    earnAchievement('match_winner');
                 }, 500);
             }
         } else {
@@ -422,6 +637,7 @@ function endQuiz() {
     if (quizScore === 5) {
         message = "🏆 PERFECT! You're a Flower GENIUS! 🏆";
         launchConfetti();
+        earnAchievement('quiz_master');
     } else if (quizScore >= 3) {
         message = "🌟 Great job! You know your flowers! 🌟";
     } else {
@@ -493,6 +709,7 @@ function searchFlower() {
 
     if (found) {
         results.innerHTML = createFlowerCard(found);
+        earnAchievement('first_search');
     } else {
         results.innerHTML =
             "<div class='not-found'>" +

@@ -494,3 +494,152 @@ button:hover {
     height: 30px;
     cursor: pointer;
 }
+
+/* TWINKLING STARS */
+.star {
+    position: fixed;
+    font-size: 20px;
+    animation: twinkle 2s infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* SPEED QUIZ BUTTON */
+.speed-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.speed-btn:hover {
+    background: linear-gradient(45deg, #ee5a5a, #eec82c);
+}
+
+/* BADGE BUTTON */
+.badge-btn {
+    background: linear-gradient(45deg, #ffd700, #ffb347);
+}
+
+.badge-btn:hover {
+    background: linear-gradient(45deg, #e6c200, #e6a23c);
+}
+
+/* ACHIEVEMENTS BAR */
+.achievements-bar {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.mini-badge {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 5px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.mini-badge.earned {
+    filter: grayscale(0%);
+    opacity: 1;
+    animation: badge-bounce 0.5s;
+}
+
+@keyframes badge-bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+/* ACHIEVEMENT CARDS */
+.badge-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.badge-card.locked {
+    opacity: 0.5;
+    filter: grayscale(100%);
+}
+
+.badge-icon {
+    font-size: 50px;
+}
+
+.badge-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.badge-info p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* GROW ON HOVER */
+.flower-mini-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.flower-mini-card img {
+    transition: transform 0.3s;
+}
+
+/* SPEED QUIZ TIMER */
+.timer {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff6b6b;
+    animation: timer-pulse 1s infinite;
+}
+
+@keyframes timer-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); color: #ff4444; }
+}
+
+/* SECRET FLOWER */
+.secret-flower {
+    background: linear-gradient(45deg, #gold, #purple, #pink);
+    border: 4px solid gold;
+    animation: rainbow-border 3s infinite;
+}
+
+@keyframes rainbow-border {
+    0% { border-color: gold; }
+    33% { border-color: purple; }
+    66% { border-color: hotpink; }
+    100% { border-color: gold; }
+}
+
+/* CROWN FOR EXPERTS */
+.crown {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    animation: crown-float 2s infinite;
+}
+
+@keyframes crown-float {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
