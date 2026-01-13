@@ -204,5 +204,179 @@ var flowers = [
         picture: "https://upload.wikimedia.org/wikipedia/commons/1/11/Plumeria_rubra_-_Frangipani_at_Mayyil.jpg",
         colors: "White, Yellow, Pink",
         fact: "Plumeria flowers are used to make Hawaiian leis - those pretty flower necklaces! They smell like tropical vacation!"
+    },
+    {
+        name: "Azalea",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Azalea_japonica.jpg",
+        colors: "Pink, Red, White, Purple",
+        fact: "Azaleas bloom so much they can cover an entire bush in flowers! In some places, there are huge festivals just for azaleas!"
+    },
+    {
+        name: "Crocus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/41/Krokus_-_Teknansen.jpg",
+        colors: "Purple, Yellow, White",
+        fact: "Crocuses are tiny flowers that pop up in EARLY spring - sometimes through snow! They're like little colorful surprises!"
+    },
+    {
+        name: "Begonia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Begonia_x_semperflorens-cultorum.jpg",
+        colors: "Red, Pink, White, Orange",
+        fact: "Begonias have leaves that look like angel wings! Some have polka dots on them. They're great for shady spots!"
+    },
+    {
+        name: "Geranium",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Geranium_psilostemon.jpg",
+        colors: "Red, Pink, White, Purple",
+        fact: "Geraniums are super popular in window boxes! Their leaves smell lemony when you rub them. Butterflies love them!"
+    },
+    {
+        name: "Petunia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/43/Petunia_nyctaginiflora.jpg",
+        colors: "Purple, Pink, Red, White, Yellow",
+        fact: "Petunias come in SO many colors - even striped ones! They're related to tomatoes and potatoes. How weird is that?!"
+    },
+    {
+        name: "Foxglove",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Digitalis_purpurea2.jpg",
+        colors: "Purple, Pink, White, Yellow",
+        fact: "Foxgloves have flowers shaped like little bells that fairies might wear as hats! They grow super tall - taller than you!"
+    },
+    {
+        name: "Delphinium",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Delphinium_elatum.jpg",
+        colors: "Blue, Purple, Pink, White",
+        fact: "Delphiniums grow in tall spikes that look like towers of flowers! The name comes from 'dolphin' because the buds look like dolphins!"
+    },
+    {
+        name: "Aster",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/2/21/Aster_%27October_Skies%27_Flower_2700px.jpg",
+        colors: "Purple, Pink, Blue, White",
+        fact: "Asters look like little stars! The name means 'star' in Greek. They bloom in fall when most other flowers are done!"
+    },
+    {
+        name: "Coneflower",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/1/18/Echinacea_purpurea_002.JPG",
+        colors: "Purple, Pink, White, Yellow",
+        fact: "Coneflowers have a spiky center that looks like a hedgehog! Bees and butterflies LOVE them. They help you not get sick!"
+    },
+    {
+        name: "Black-Eyed Susan",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Rudbeckia_hirta_Indian_Summer_flowers.jpg",
+        colors: "Yellow, Orange",
+        fact: "Black-Eyed Susans have a dark brown center that looks like an eye! They're super tough and grow in hot summer sun!"
+    },
+    {
+        name: "Hollyhock",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Alcea_rosea_-_p%C3%A4iv%C3%A4%29.jpg",
+        colors: "Pink, Red, Yellow, White, Purple",
+        fact: "Hollyhocks can grow as tall as a house! People used to make dolls out of them with the flowers as the dresses!"
+    },
+    {
+        name: "Sweet Pea",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/46/Lathyrus_odoratus.jpg",
+        colors: "Pink, Purple, White, Red",
+        fact: "Sweet peas smell like honey and candy mixed together! They climb up fences and trellises with curly little tendrils!"
+    },
+    {
+        name: "Cosmos",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/1/12/Cosmos_bipinnatus_%28Burdeos%29_D.jpg",
+        colors: "Pink, White, Red, Orange",
+        fact: "Cosmos flowers look delicate like they're dancing in the wind! The name means 'beautiful' in Greek!"
+    },
+    {
+        name: "Anemone",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Anemone_coronaria_De_Caen.jpg",
+        colors: "Red, Pink, Purple, White, Blue",
+        fact: "Anemones are called 'windflowers' because their petals sway in the breeze! Greek myths say they grew from a goddess's tears!"
+    },
+    {
+        name: "Ranunculus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ranunculus_asiaticus_0574.jpg",
+        colors: "Red, Pink, Orange, Yellow, White",
+        fact: "Ranunculus have SO many petals - they look like tissue paper flowers! They're super popular for weddings!"
+    },
+    {
+        name: "Protea",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/78/Protea_cynaroides_1.jpg",
+        colors: "Pink, Red, White, Orange",
+        fact: "Proteas are HUGE flowers from South Africa! They look like they're from another planet. They're super ancient - older than dinosaurs!"
+    },
+    {
+        name: "Freesia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Freesia_alba.jpg",
+        colors: "White, Yellow, Pink, Purple, Red",
+        fact: "Freesias smell like honey and strawberries! They grow from bulbs and the flowers bend in a pretty curve!"
+    },
+    {
+        name: "Calla Lily",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/0/07/Zantedeschia_aethiopica_-_Kew_1.jpg",
+        colors: "White, Pink, Yellow, Purple, Orange",
+        fact: "Calla lilies aren't actually lilies! They're shaped like fancy trumpets. Brides love them in bouquets!"
+    },
+    {
+        name: "Amaryllis",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/76/Red_and_white_amaryllis.jpg",
+        colors: "Red, White, Pink, Orange",
+        fact: "Amaryllis flowers are HUGE - as big as your face! People grow them inside during winter to have beautiful flowers when it's cold outside!"
+    },
+    {
+        name: "Snowdrop",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Galanthus_nivalis.jpg",
+        colors: "White",
+        fact: "Snowdrops are tiny white flowers that bloom when there's still SNOW on the ground! They're like little bells saying spring is coming!"
+    },
+    {
+        name: "Lilac",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Lilac_flower.jpg",
+        colors: "Purple, Pink, White",
+        fact: "Lilacs smell SO good - one of the best smells ever! The color 'lilac' is named after this flower! They only bloom for a few weeks!"
+    },
+    {
+        name: "Honeysuckle",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/48/Lonicera_periclymenum.jpg",
+        colors: "White, Yellow, Pink, Orange",
+        fact: "You can actually suck the sweet nectar out of honeysuckle flowers! That's how they got their name! Hummingbirds love them!"
+    },
+    {
+        name: "Clover",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Red_clover_closeup.jpg",
+        colors: "Pink, Purple, White",
+        fact: "Clovers usually have 3 leaves, but if you find one with 4 leaves, it's SUPER lucky! Bees make yummy honey from clover!"
+    },
+    {
+        name: "Bleeding Heart",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/53/Lamprocapnos_spectabilis_flowers.jpg",
+        colors: "Pink, White, Red",
+        fact: "Bleeding hearts are shaped like little pink hearts with a drop coming out! They look like Valentine's Day flowers!"
+    },
+    {
+        name: "Passionflower",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Passiflora_incarnata_flower.jpg",
+        colors: "Purple, Blue, White",
+        fact: "Passionflowers are SO weird and cool looking - like alien flowers! They have curly tentacles and make yummy passionfruit!"
+    },
+    {
+        name: "Bougainvillea",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/42/Bougainvillea_spectabilis.JPG",
+        colors: "Pink, Purple, Red, Orange, White",
+        fact: "Bougainvillea is so bright and colorful - but the colorful parts are actually leaves, not petals! The real flowers are tiny and white!"
+    },
+    {
+        name: "Lantana",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Lantana_camara_003.JPG",
+        colors: "Yellow, Orange, Pink, Red, Purple",
+        fact: "Lantana flowers are like tiny bouquets of different colors all in one! Butterflies go CRAZY for them!"
+    },
+    {
+        name: "Impatiens",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/39/Impatiens_walleriana.jpg",
+        colors: "Pink, Red, White, Orange, Purple",
+        fact: "When you touch impatiens seed pods, they EXPLODE and shoot seeds everywhere! That's why they're called 'touch-me-nots'!"
+    },
+    {
+        name: "Columbine",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aquilegia_caerulea.jpg",
+        colors: "Blue, Purple, Red, Yellow, White",
+        fact: "Columbines have spurs that stick out the back like little hats or jester bells! Hummingbirds drink nectar from the spurs!"
     }
 ];
