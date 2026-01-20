@@ -552,5 +552,119 @@ var flowers = [
         picture: "https://upload.wikimedia.org/wikipedia/commons/8/81/Polianthes_tuberosa_2.jpg",
         colors: "White",
         fact: "Tuberoses smell SO STRONG and sweet - the most fragrant flower ever! One stem can make your whole room smell amazing!"
+    },
+    {
+        name: "Stargazer Lily",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/9/99/Lilium_%27Stargazer%27.jpg",
+        colors: "Pink, White, Red",
+        fact: "Stargazer lilies point UP to the sky like they're looking at the stars! They smell SO amazing and have pretty spots!"
+    },
+    {
+        name: "Periwinkle",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/46/Catharanthus_roseus_white_CC-BY-SA.jpg",
+        colors: "Purple, Blue, Pink, White",
+        fact: "Periwinkles are tough little flowers that grow almost anywhere! The color 'periwinkle' is named after this pretty flower!"
+    },
+    {
+        name: "Calendula",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/33/Calendula_officinalis_2.jpg",
+        colors: "Orange, Yellow",
+        fact: "Calendula is also called 'pot marigold'! You can actually eat the petals - they make salads look super fancy!"
+    },
+    {
+        name: "Baby's Breath",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Gypsophila_elegans_HRM1.jpg",
+        colors: "White, Pink",
+        fact: "Baby's breath is made of TONS of tiny little flowers! It makes bouquets look like they have little clouds in them!"
+    },
+    {
+        name: "Chamomile",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/44/Chamomile_%40_original_size.jpg",
+        colors: "White, Yellow",
+        fact: "Chamomile makes the BEST sleepy-time tea! The flowers look like tiny daisies. It helps tummy aches too!"
+    },
+    {
+        name: "Balloon Flower",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/89/Platycodon_grandiflorus.JPG",
+        colors: "Blue, Purple, Pink, White",
+        fact: "Before balloon flowers open, the buds look like little balloons you could POP! Then they open into pretty stars!"
+    },
+    {
+        name: "Four O'Clock",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/b/be/Mirabilis_jalapa.jpg",
+        colors: "Pink, Yellow, Red, White",
+        fact: "Four o'clock flowers only open at 4 PM! Sometimes one plant has DIFFERENT colored flowers on it - how cool!"
+    },
+    {
+        name: "Gaillardia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Gaillardia_aristata.jpg",
+        colors: "Red, Yellow, Orange",
+        fact: "Gaillardia is called 'blanket flower' because it looks like colorful Native American blankets! Butterflies love it!"
+    },
+    {
+        name: "Statice",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Limonium_sinuatum_%27Midnight_Blue%27.jpg",
+        colors: "Purple, Blue, Pink, Yellow, White",
+        fact: "Statice keeps its color forever even when it dries! You can make dried flower bouquets that last for years!"
+    },
+    {
+        name: "Celosia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Celosia_argentea_var._cristata_%27Coral_Garden%27.jpg",
+        colors: "Red, Orange, Yellow, Pink, Purple",
+        fact: "Celosia looks like colorful fuzzy brains or flames! Some look like rooster combs - so weird and cool!"
+    },
+    {
+        name: "Dianthus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/6/65/Dianthus_chinensis.jpg",
+        colors: "Pink, Red, White, Purple",
+        fact: "Dianthus means 'flower of the gods'! The petals have zigzag edges like they were cut with special scissors!"
+    },
+    {
+        name: "Oleander",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Nerium_oleander_flowers_leaves.jpg",
+        colors: "Pink, White, Red, Yellow",
+        fact: "Oleander flowers are super pretty but you can't eat them - they're just for looking at! They grow by the beach!"
+    },
+    {
+        name: "Amaranth",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Amaranthus_caudatus1.jpg",
+        colors: "Red, Purple, Pink, Green",
+        fact: "Amaranth hangs down in long, droopy tassels like a waterfall of flowers! Ancient people thought it was magical!"
+    },
+    {
+        name: "Anthurium",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/d/da/Anthurium_andraeanum_1.jpg",
+        colors: "Red, Pink, White, Purple",
+        fact: "Anthuriums are shaped like hearts with a little tail! They're from tropical jungles and last a LONG time!"
+    },
+    {
+        name: "Torch Ginger",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Etlingera_elatior.jpg",
+        colors: "Pink, Red",
+        fact: "Torch ginger flowers are HUGE and look like they're on fire! They grow in jungles and can be taller than you!"
+    },
+    {
+        name: "Angel's Trumpet",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Brugmansia_suaveolens.jpg",
+        colors: "White, Yellow, Pink, Orange",
+        fact: "Angel's trumpets hang down like big trumpets - some are over 1 foot long! They smell amazing at night!"
+    },
+    {
+        name: "Crown Imperial",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Fritillaria_imperialis01.jpg",
+        colors: "Orange, Yellow, Red",
+        fact: "Crown imperial flowers grow in a ring with leaves on top like a crown! Ancient kings loved them!"
+    },
+    {
+        name: "Delicate Lily",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Gloriosa_superba_1.jpg",
+        colors: "Red, Yellow, Orange",
+        fact: "This is also called flame lily or glory lily! The petals curl back like flames and it climbs like a vine!"
+    },
+    {
+        name: "Chocolate Cosmos",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/1/11/Cosmos_atrosanguineus.jpg",
+        colors: "Dark Red, Brown",
+        fact: "Chocolate cosmos actually smells like CHOCOLATE! It's super rare and almost went extinct. Yummy smelling flower!"
     }
 ];
