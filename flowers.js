@@ -378,5 +378,179 @@ var flowers = [
         picture: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Aquilegia_caerulea.jpg",
         colors: "Blue, Purple, Red, Yellow, White",
         fact: "Columbines have spurs that stick out the back like little hats or jester bells! Hummingbirds drink nectar from the spurs!"
+    },
+    {
+        name: "Water Lily",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Nymphaea_alba_flower.jpg",
+        colors: "White, Pink, Yellow, Blue",
+        fact: "Water lilies float on ponds like magical lily pads! In the story of the Frog Prince, the frog sits on lily pads! Some water lilies are HUGE!"
+    },
+    {
+        name: "Dahlia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Dahlia_x_hybrida.jpg",
+        colors: "Red, Pink, Orange, Yellow, Purple, White",
+        fact: "Dahlias have SO many petals they look like fireworks! They can be as small as a golf ball or as big as a dinner plate!"
+    },
+    {
+        name: "Gladiolus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/af/Gladiolus_imbricatus_600.jpg",
+        colors: "Red, Pink, Purple, Yellow, White, Orange",
+        fact: "Gladiolus grow on tall spikes like swords! The name means 'little sword' in Latin. Ancient warriors were given these flowers!"
+    },
+    {
+        name: "Hyacinth",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Hyacinth_-_Flickr_-_Stiller_Beobachter.jpg",
+        colors: "Blue, Purple, Pink, White, Yellow",
+        fact: "Hyacinths smell SO amazing - one flower can make a whole room smell good! They grow from bulbs and bloom in spring!"
+    },
+    {
+        name: "Gerbera Daisy",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/2/26/Gerbera_jamesonii.jpg",
+        colors: "Red, Pink, Orange, Yellow, White",
+        fact: "Gerbera daisies are like giant happy daisies! They come in almost every color except blue. They make people smile!"
+    },
+    {
+        name: "Tiger Lily",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/81/Tiger_Lily_Lilium_columbianum.jpg",
+        colors: "Orange, Red, Yellow",
+        fact: "Tiger lilies have spots like a tiger! They're super pretty and the petals curl back like they're doing a backbend!"
+    },
+    {
+        name: "Bluebonnet",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bluebonnets_in_Burnet_County%2C_TX.jpg",
+        colors: "Blue, Purple",
+        fact: "Bluebonnets are the state flower of Texas! They cover fields like a blue carpet. People drive just to see them!"
+    },
+    {
+        name: "Indian Paintbrush",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/6/63/Castilleja_rhexiifolia.jpg",
+        colors: "Red, Orange, Yellow",
+        fact: "Indian paintbrush flowers look like they were dipped in paint! Native American stories say a boy painted the sunset with them!"
+    },
+    {
+        name: "Primrose",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Primrose_Primula_vulgaris.jpg",
+        colors: "Yellow, Pink, Purple, White, Red",
+        fact: "Primroses are one of the first flowers of spring! Their name means 'first rose' but they're not really roses at all!"
+    },
+    {
+        name: "Allium",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Allium_giganteum0.jpg",
+        colors: "Purple, Pink, White, Blue",
+        fact: "Alliums look like giant purple lollipops or fuzzy balls on sticks! They're related to onions but WAY prettier!"
+    },
+    {
+        name: "Moonflower",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ipomoea_alba_blossoms.jpg",
+        colors: "White",
+        fact: "Moonflowers only open at NIGHT when the moon comes out! They glow white in the moonlight like magic!"
+    },
+    {
+        name: "Hellebore",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/6/63/Christmas_rose.jpg",
+        colors: "White, Pink, Purple, Green",
+        fact: "Hellebores bloom in WINTER when it's cold and snowy! They're also called Christmas Roses even though they're not roses!"
+    },
+    {
+        name: "African Violet",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/7b/African_violet.jpg",
+        colors: "Purple, Blue, Pink, White",
+        fact: "African violets are tiny and fuzzy and grow inside in pots! Grandmas love growing them on windowsills! They can bloom all year!"
+    },
+    {
+        name: "Salvia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Salvia_splendens_J2.jpg",
+        colors: "Red, Blue, Purple, Pink, White",
+        fact: "Salvia flowers grow on tall spikes and hummingbirds LOVE them! The red ones are like beacons for birds!"
+    },
+    {
+        name: "Clematis",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Clematis_viticella_002.JPG",
+        colors: "Purple, Pink, Blue, White, Red",
+        fact: "Clematis climb up walls and fences and cover them in beautiful flowers! They can grow 20 feet tall!"
+    },
+    {
+        name: "Phlox",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/52/Phlox_paniculata_Starfire_1a.jpg",
+        colors: "Pink, Purple, White, Red",
+        fact: "Phlox flowers grow in big fluffy clusters and smell SO sweet! Butterflies have a party on them!"
+    },
+    {
+        name: "Verbena",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Verbena_bonariensis_10.jpg",
+        colors: "Purple, Pink, Red, White",
+        fact: "Verbena has tiny flowers in big clusters on tall stems! They bloom all summer and butterflies dance on them!"
+    },
+    {
+        name: "Yarrow",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Achillea_millefolium_Blanco.jpg",
+        colors: "White, Yellow, Pink, Red",
+        fact: "Yarrow has feathery leaves and flat flower clusters! Ancient warriors used it to heal wounds. It's super tough!"
+    },
+    {
+        name: "Queen Anne's Lace",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Daucus_Carota.jpg",
+        colors: "White",
+        fact: "Queen Anne's Lace looks like fancy lace doilies! It's actually a wild carrot. The story says a queen pricked her finger making lace!"
+    },
+    {
+        name: "Edelweiss",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/3/35/Leontopodium_alpinum_2b.jpg",
+        colors: "White",
+        fact: "Edelweiss grows high up in the mountains where it's super cold! There's a famous song about it! It's fuzzy and soft!"
+    },
+    {
+        name: "Acacia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Acacia_pycnantha_Golden_Wattle.jpg",
+        colors: "Yellow, White",
+        fact: "Acacia flowers are fluffy yellow pom-poms! Bees make special honey from them! They grow in hot places like Australia!"
+    },
+    {
+        name: "Heather",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Calluna_vulgaris_01.jpg",
+        colors: "Purple, Pink, White",
+        fact: "Heather covers hillsides in Scotland like a purple blanket! It's considered good luck! Bees make yummy heather honey!"
+    },
+    {
+        name: "Fuchsia",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/9/91/Fuchsia_magellanica.jpg",
+        colors: "Pink, Purple, Red, White",
+        fact: "Fuchsia flowers hang down like dancing ballerinas! Hummingbirds love them! The color 'fuchsia' is named after this flower!"
+    },
+    {
+        name: "Stock",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/49/Matthiola_incana.jpg",
+        colors: "Pink, Purple, White, Cream",
+        fact: "Stock flowers smell like cinnamon and cloves mixed with flowers! They're super fragrant and used in fancy bouquets!"
+    },
+    {
+        name: "Lisianthus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/7/79/Eustoma_grandiflorum_-_lisianthus_-_Texas_bluebell_-_02.jpg",
+        colors: "Purple, Pink, White, Green",
+        fact: "Lisianthus looks like roses but with softer, rufflier petals! They last a LONG time in vases - up to 3 weeks!"
+    },
+    {
+        name: "Agapanthus",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Agapanthus_africanus.jpg",
+        colors: "Blue, Purple, White",
+        fact: "Agapanthus grows in a big round ball of flowers on a tall stem - like a flower firework! The name means 'love flower'!"
+    },
+    {
+        name: "Scabiosa",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/82/Scabiosa_columbaria_closeup.jpg",
+        colors: "Blue, Purple, Pink, White",
+        fact: "Scabiosa is also called pincushion flower because it looks like a pin cushion! Bees and butterflies go crazy for them!"
+    },
+    {
+        name: "Red Hot Poker",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kniphofia.jpg",
+        colors: "Red, Orange, Yellow",
+        fact: "Red hot pokers look like colorful torches! They start red at the top and fade to yellow at the bottom! Hummingbirds love them!"
+    },
+    {
+        name: "Tuberose",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/8/81/Polianthes_tuberosa_2.jpg",
+        colors: "White",
+        fact: "Tuberoses smell SO STRONG and sweet - the most fragrant flower ever! One stem can make your whole room smell amazing!"
     }
 ];
